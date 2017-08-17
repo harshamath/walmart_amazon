@@ -1,0 +1,44 @@
+		if($product_match_status[$psize][2] == 0 && $product_match_status[$psize][3] == $word_count){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($product_match_status[$psize][2] == 0 && $product_match_status[$psize][3] == $word_count-1){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($product_match_status[$psize][2] == -1 && $product_match_status[$psize][3] == $word_count){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($product_match_status[$psize][2] == 1 && $product_match_status[$psize][3] == $word_count-1){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($product_match_status[$psize][2] == -1 && $product_match_status[$psize][3] == $word_count-1){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($product_match_status[$psize][2] == 1 && $product_match_status[$psize][3] == $word_count-2){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($product_match_status[$psize][2] == -1 && $product_match_status[$psize][3] == $word_count-2){
+			$found_match = 1;
+			echo "Match Found".'</br>';
+			echo $product_match_status[$psize][0].'||';
+			echo $product_match_status[$psize][1].' '.'</br>';
+		}
+		if($found_match == 1)
+		break;
